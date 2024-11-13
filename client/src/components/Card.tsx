@@ -3,6 +3,7 @@ import CardContent from "./CardContent";
 //Hero type
 interface Card {
   onSwitch: () => void;
+  data: Hero[];
 };
 interface Hero {
   id: number;
@@ -26,9 +27,9 @@ interface Data {
   data: Hero[];
 }
 
-function Card({ data }: Data { onSwitch }: Card) {
+function Card({ data, onSwitch }: Card) {
   return (
-    <section>
+    <><section>
       {data.map((hero) => (
         <CardContent key={hero.id} data={hero} />
       ))}
@@ -53,7 +54,7 @@ function Card({ data }: Data { onSwitch }: Card) {
       <button onClick={onSwitch} className="Show" type="button">
         show
       </button>
-    </div>
+    </div></>
   );
 }
 
