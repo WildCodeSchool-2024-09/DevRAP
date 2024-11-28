@@ -1,5 +1,4 @@
 // Load environment variables from .env file
-import "dotenv/config";
 
 import fs from "node:fs";
 

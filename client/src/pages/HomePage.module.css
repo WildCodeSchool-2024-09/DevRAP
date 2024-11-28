@@ -1,0 +1,67 @@
+.homePage {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  @media (min-width: 996px) {
+    margin: 0 15%;
+  }
+}
+
+.homePage h1 {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 3rem 0;
+  padding: 0 1rem;
+  opacity: 0.9;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 35px;
+  color: #eee;
+  overflow: hidden; /* Hide text that is not yet displayed */
+  display: inline-block;
+  @media screen and (min-width: 996px) {
+    animation:
+      typing 4s steps(40) 1s 1 normal both,
+      blink-caret 0.75s step-end, hide-caret 4s steps(40) 1 normal both;
+    margin: 4rem 0 0 0;
+    line-height: 3;
+    font-size: 55px;
+    white-space: nowrap;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes hide-caret {
+  100% {
+    border-color: transparent; /* Hide the cursor after typing */
+  }
+}
+
+.homePage p {
+  text-align: center;
+  margin: 0 2rem;
+  font-size: 19px;
+  /* color: #fdfdff; */
+  color: oldlace;
+  font-weight: 400;
+  text-align: justify;
+  @media (min-width: 996px) {
+    margin-top: 4rem;
+    line-height: 2;
+    font-size: 30px;
+  }
+}

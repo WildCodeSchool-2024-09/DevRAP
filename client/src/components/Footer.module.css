@@ -1,0 +1,78 @@
+.footerContener {
+  background-color: #1c1f4a;
+  box-shadow: 5px 5px 5px black;
+  display: flex;
+  flex-direction: column;
+  height: 14vh;
+  justify-content: end;
+  align-items: center;
+  font-size: 13px;
+  text-align: end;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  gap: 0.3rem;
+  @media screen and (min-width: 996px) {
+    font-size: 22px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 35px 0 0 0;
+    height: 10vh;
+    gap: 0;
+  }
+}
+
+#logoFooter {
+  display: none;
+  @media screen and (min-width: 996px) {
+    display: block;
+    width: 30%;
+    margin-bottom: 0%;
+  }
+}
+
+.firstLineFooter {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (min-width: 996px) {
+    display: flex;
+    flex-wrap: nowrap;
+
+    align-items: center;
+    width: 20vw;
+  }
+}
+
+.firstLineFooter p {
+  @media screen and (min-width: 996px) {
+    font-size: 18px;
+  }
+}
+
+.collabRef {
+  cursor: pointer;
+  color: white;
+  text-decoration-line: none;
+  font-size: 11px;
+  @media screen and (min-width: 996px) {
+    font-size: 18px;
+  }
+}
+
+.collaborateurs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  justify-content: space-evenly;
+  @media screen and (min-width: 996px) {
+    width: 33vw;
+  }
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  gap: 2em;
+}

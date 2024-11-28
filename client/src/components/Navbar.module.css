@@ -1,0 +1,136 @@
+.header {
+  background-color: #1c1f4ab0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 5px black;
+  width: 100%;
+  z-index: 10;
+  height: 20vh;
+  padding-bottom: 1rem;
+  @media screen and (min-width: 996px) {
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 8.5vh;
+  }
+}
+
+.header h1 {
+  font-family: "Sixtyfour Convergence", sans-serif;
+  position: relative;
+  left: 1rem;
+  margin-top: 0.8rem;
+}
+
+.headerLogo {
+  height: 4.6rem;
+  margin-left: 1.5rem;
+  position: relative;
+  left: 1rem;
+  margin-top: 0.8rem;
+}
+
+.logoContent {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-height: 20vh;
+  @media screen and (min-width: 996px) {
+    justify-content: left;
+    margin-top: 1.4rem;
+  }
+}
+
+.headerLogo:hover {
+  filter: drop-shadow(0 2px 9px white);
+}
+
+.h1navbar:hover {
+  filter: drop-shadow(2px 2px 9px white);
+}
+
+.navContent {
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  @media screen and (min-width: 996px) {
+    justify-content: right;
+    margin-top: 0.8rem;
+  }
+}
+
+.allSections {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  margin-right: 1.5rem;
+  @media screen and (min-width: 996px) {
+    gap: 0.8rem;
+  }
+}
+
+.link {
+  display: flex;
+  text-decoration: none;
+  box-shadow: 1px 1px 2px lightgrey;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.75em;
+  border-radius: 10px;
+  width: 80px;
+  height: 40px;
+  position: relative;
+  left: 1rem;
+  @media screen and (min-width: 996px) {
+    width: 120px;
+    font-size: 1em;
+    padding: 0.5rem;
+    position: unset;
+    margin-top: 1rem;
+  }
+}
+
+.link:hover {
+  opacity: 0.8;
+  color: #1c1f4a;
+  background: #fff;
+  box-shadow: 1px 1px 15px 5px #7b1113;
+  transition-duration: 0.5s;
+}
+
+@media (min-width: 996px) {
+  .logoContent h1 {
+    font-size: 1.7rem;
+  }
+  .bookmarkIcon {
+    right: 1rem;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.bookmarkContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
+  @media screen and (min-width: 996px) {
+    margin: 0 30px 0 25px;
+  }
+}
+
+.bookmark {
+  width: 40px;
+  height: 40px;
+  border-radius: 15%;
+}
+
+.bookmark:hover {
+  box-shadow: 0px 0px 1px 5px white;
+  transition-duration: 0.3s;
+  border: none;
+}

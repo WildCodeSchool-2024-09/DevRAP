@@ -1,0 +1,59 @@
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  @media (min-width: 996px) {
+    grid-template-columns: repeat(8, 1fr);
+    gap: 2rem;
+  }
+}
+
+.childrenCard {
+  background-color: #7b1113;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 5px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.childrenCard:hover {
+  scale: 1.2;
+}
+
+.card img {
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  width: 100%;
+  height: auto;
+}
+
+.card h2 {
+  font-size: small;
+  color: var(--color6-);
+  text-shadow: 5px 5px 5px black;
+  @media (min-width: 996px) {
+    font-size: larger;
+  }
+}
+
+.star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 5px 5px 5px black;
+  background-color: #7b1113;
+  border: none;
+  width: 35px;
+  height: 35px;
+}
+
+.star:hover {
+  background-color: rgb(78, 23, 23);
+  border-radius: 50%;
+}
